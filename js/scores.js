@@ -1,17 +1,14 @@
 function displayScores(){
-    //var storedHighScores = JSON.parse(window.localStorage.getItem("highscores")) || [];
-    //var storedHighScores = localStorage.getItem("highscores");
-    //console.log(storedHighScores)
 
-    highScoresEl = document.getElementById("highscores").innerHTML;
-    //data = JSON.stringify(window.localStorage.getItem("highscores"));
-    data = JSON.parse(window.localStorage.getItem("highscores")) || [];
-
-
-    var score = data.score //this is wrong was trying things out
-
+    var highScoresEl = document.getElementById("highscores");
+    var data = JSON.parse(window.localStorage.getItem("highscores"));
+    if(data){
+        highScoresEl.innerHTML = data;
+    }else{
+        console.log("didn't work");
+    }
+    
     console.log(data)
-
 }
 
 displayScores();
