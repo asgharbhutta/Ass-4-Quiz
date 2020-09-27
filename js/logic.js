@@ -1,15 +1,30 @@
 //Questions to be used during the quiz
 var questions = [
     {
-        title: "What colour is the sky",
-        choices: ["blue","red","black","yellow"],
-        answer: "blue"
+        title: "What does js stand for?",
+        choices: ["JavaScript","JavaScribble","JackScript","JohnnyScript"],
+        answer: "JavaScript"
     },
     {
-        title: "What direction is north",
-        choices: ["north","east","south","west"],
-        answer: "north"
+        title: "Who created JavaScript?",
+        choices: ["Backstreet Boys","Brendan Eich","Homer Simpson","Mega Man X"],
+        answer: "Brendan Eich"
     },
+    {
+        title: "Which one of these allows the user to type data into a form field?",
+        choices: ["Input","FormInput","PutterOfForms","TypeInHere"],
+        answer: "Input"
+    },
+    {
+        title: "A variable does what?",
+        choices: ["Varies with the weather","Stores data for later manipulation","Helps with cleaning up","Stops look iteration"],
+        answer: "Stores data for later manipulation"
+    },
+    {
+        title: "This '[]' is used to initialize what?",
+        choices: ["Portals","Jumper Cables","An Array","Rubix Cube"],
+        answer: "An Array"
+    }
 ];
 
 //initializing variables
@@ -84,6 +99,11 @@ function questionClick() {
     else{
         feedbackEl.textContent = "Correct!";
     }
+
+    feedbackEl.setAttribute("class","feedback");
+    setTimeout(function(){
+        feedbackEl.setAttribute("class","feedback hide");
+    },1000)
     
     //next question
     currentQuestionIndex++
