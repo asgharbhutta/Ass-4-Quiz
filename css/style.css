@@ -1,16 +1,113 @@
 .start{
-    display: block;
+    display: none;
 }
 
 .hide{
     display: none;
 }
 
-body {
-    background-color:white;
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+
+}
+
+#start-screen p {
+    display: flex;
+    width: 50%;
+    font-size: 18px;
+    padding-top: 1px;
+    line-height: 1.5;
+    flex-wrap: nowrap;
+}
+
+#end-screen p {
+    font-size: 28px;
+    padding-top: 10px;
+}
+
+.choices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+button {
+    width: 100;
+    margin: 0;
+    padding: 10px 40px;
+    margin: 20px;
+    background-color: purple;
     color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: rgb(238, 40, 238);
+}
+
+
+.wrapper {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .wrapper {
-    background-color: chocolate;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+.wrapper .start{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scores {
+    padding: 30px;
+    color: fuchsia;
+    font-size:20px;
+}
+
+.timer {
+    color: black;
+    padding: 30px;
+    font-size:20px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feedback {
+    background-color: black;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.endscreen {
+    margin: 0 auto;
+    width: 100%;
+
+
+}
+
+
