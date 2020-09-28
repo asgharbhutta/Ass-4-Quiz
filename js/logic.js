@@ -29,7 +29,7 @@ var questions = [
 
 //initializing variables
 var currentQuestionIndex = 0;
-var time = 50;
+var time = 80;
 var timerId;
 
 //DOM reference variables
@@ -86,7 +86,7 @@ function questionClick() {
     //check the answer
     if(this.value !== questions[currentQuestionIndex].answer){
         //take time off if wrong
-        time = time - 15;
+        time = time - 10;
 
         if(time < 0){
             time = 0;

@@ -13,7 +13,6 @@ h1 {
 h2 {
     display: flex;
     justify-content: center;
-
 }
 
 #start-screen p {
@@ -35,21 +34,23 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
+
 button {
     width: 100;
     margin: 0;
-    padding: 10px 40px;
+    padding: 10px 30px;
     margin: 20px;
     background-color: purple;
     color: white;
     font-size: 22px;
     text-decoration: none;
+    border-radius: 20px;
 }
 
 button:hover {
     background-color: rgb(238, 40, 238);
+    box-shadow: 2px 2px #888888;
 }
 
 
@@ -58,6 +59,20 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
 
+}
+
+.highscores {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.highscores p {
+    font-size: 30px;
+    margin: 0;
+    padding: 0px;
 }
 
 .wrapper {
@@ -106,8 +121,8 @@ header {
 .endscreen {
     margin: 0 auto;
     width: 100%;
-
-
 }
+
+p:nth-child(odd) {background-color: #f2f2f2;}
 
 
